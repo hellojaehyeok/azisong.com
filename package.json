@@ -1,8 +1,8 @@
 {
-  "name": "song.dev",
+  "name": "azisong.com",
   "version": "1.0.0",
   "private": true,
-  "description": "song.dev",
+  "description": "azisong.com",
   "author": "Song jae hyeok",
   "keywords": [
     "gatsby"
@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "gatsby": "^5.6.1",
+    "gatsby-source-filesystem": "^5.7.0",
+    "gatsby-transformer-remark": "^6.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

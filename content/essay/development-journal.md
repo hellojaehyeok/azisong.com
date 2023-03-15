@@ -1,5 +1,5 @@
 ---
-title: "Development journal"
+title: 'Development journal'
 date: 2023-03-15
 ---
 

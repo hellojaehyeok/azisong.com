@@ -1,5 +1,7 @@
-import React from "react";
-import { graphql } from "gatsby";
+import Layout from '../components/Layout';
+import Title from '../components/post/Title';
+import React from 'react';
+import { graphql } from 'gatsby';
 
 export default function Page({ data, pageContext }) {
   const {
@@ -8,13 +10,10 @@ export default function Page({ data, pageContext }) {
   } = data.markdownRemark;
 
   return (
-    <div>
-      <h1>{title}</h1>
-      <div
-        className="post-container"
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
-    </div>
+    <Layout>
+      <Title>{title}</Title>
+      <div className="post-container" dangerouslySetInnerHTML={{ __html: html }} />
+    </Layout>
   );
 }
 

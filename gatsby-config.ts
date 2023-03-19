@@ -17,7 +17,7 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Noto Serif KR`, `Noto Sans KR`],
+        fonts: [`Noto Serif KR`, `Noto Sans KR\:100, 300, 400, 500`],
         display: 'swap',
       },
     },

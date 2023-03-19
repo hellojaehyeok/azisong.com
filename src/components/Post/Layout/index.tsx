@@ -3,6 +3,7 @@ import Footer from '../../Footer';
 import Header from '../../Header';
 
 import './index.scss';
+import '../../../style/reset.scss';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (

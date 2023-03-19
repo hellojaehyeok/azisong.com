@@ -1,5 +1,6 @@
-import Layout from '../components/Layout';
+import Layout from '../components/Post/Layout';
 import Title from '../components/post/Title';
+import Contents from '../components/post/Contents';
 import React from 'react';
 import { graphql } from 'gatsby';
 
@@ -12,7 +13,7 @@ export default function Page({ data, pageContext }) {
   return (
     <Layout>
       <Title>{title}</Title>
-      <div className="post-container" dangerouslySetInnerHTML={{ __html: html }} />
+      <Contents html={html} />
     </Layout>
   );
 }

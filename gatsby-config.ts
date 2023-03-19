@@ -14,6 +14,13 @@ const config: GatsbyConfig = {
         path: `${__dirname}/content`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Noto Serif KR`, `Noto Sans KR`],
+        display: 'swap',
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
   ],

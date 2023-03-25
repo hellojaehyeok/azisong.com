@@ -43,6 +43,7 @@ Top-down 형식으로 숲을 먼저 본 다음 나무 각각의 관계성을 본
 - 상태를 관리하고 있는 변수가 많은지 찾아보고 리팩토링해보자
 - 전체적인 코드 정리 및 리팩토링에 들어가자
 - 네이밍을 신경쓰자
+- inline 할 수 있는 함수가 있는가
 
 컴포넌트를 분리해야하나? 말아야하나?
 
@@ -92,13 +93,9 @@ Top-down 형식으로 숲을 먼저 본 다음 나무 각각의 관계성을 본
 
 HTTP status, response body status 2차로 검증
 
-HTTP status → 통신의 결과
+- HTTP는 RPC(통신 프로토콜 원격에 있는 함수를 실행) 여부의 결과
 
-response body status → 어플리케이션 처리 결과
-
-HTTP는 RPC(통신 프로토콜 원격에 있는 함수를 실행) 여부의 결과
-
-response body status는 함수 실행 return 결과
+- response body status는 서버 함수 반환값, 어플리케이션 처리 결과
 
 코드 디자인 → 일정 문서
 
@@ -106,7 +103,7 @@ immutable operations은 예상치 못한 사이드이펙트 줄이는데 도움 
 
 unshift, splice 등은 mutable 해서 버그를 만들 여지를 남긴다.
 
-ssr에서 서버 통신을 할 때 앱브릿지가 섞여 있어 불안정하다.
+ssr에서 서버 통신을 할 때 앱브릿지가 섞여 있으면 csr로 넘어온다.
 
 csr only가 있으면 useQuery를 사용하자
 
